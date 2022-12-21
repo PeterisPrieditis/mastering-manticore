@@ -2,4 +2,4 @@
 
 A collection of resources to master manticore
 
-yes
+# introduction

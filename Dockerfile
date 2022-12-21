@@ -1,3 +1,14 @@
+# to run in interactive mode and add current folders as a volume
+# docker run -it -v "$PWD":/mastering-manticore pprieditis/mastering-manticore
+
+# image from Trail Of Bits with all compiler versions
+# command to build a image => docker build -t pprieditis/mastering-manticore .
+
+# docker basic comands https://stackify.com/docker-build-a-beginners-guide-to-building-docker-images/
+# Existing docker images from Trail Of Bits
+# https://github.com/trailofbits/manticore/blob/master/Dockerfile
+# https://github.com/trailofbits/eth-security-toolbox/blob/master/Dockerfile
+
 FROM trailofbits/manticore:latest
 
 # Install all and select the latest version of solc as the default
