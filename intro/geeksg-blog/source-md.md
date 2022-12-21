@@ -223,7 +223,7 @@ To run the test for the correct contract, run the following command:
 
 You will see that all three properties has passed the test in the summary output:
 
-![](../../static/images/simple-contract-passing.png)
+![](./images/simple-contract-passing.png)
 
 To run the test for the incorrect contract, run the following command:
 
@@ -231,7 +231,7 @@ To run the test for the incorrect contract, run the following command:
 
 You will see that two of the properties will fail in the summary output:
 
-![](../../static/images/rogue-contract-failing.png)
+![](./images/rogue-contract-failing.png)
 
 Checking the test case folder (in this case `./mcore_qlt3agik`), you will find the following files:
 
