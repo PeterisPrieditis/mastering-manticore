@@ -106,15 +106,15 @@ contract SimpleContractTest is SimpleContract{
 
 Running this with manticore-verifier will tell you that the test pass and that it’s impossible to have `fn` returning 1337 ever!
 
-![](../../static/images/impossible-invariant-passing.png)
+![](./images/impossible-invariant-passing.png)
 
 Running the same test with the rogue contract that passes the first test will show us that the property has failed:
 
-![](../../static/images/impossible-invariant-failing.png)
+![](./images/impossible-invariant-failing.png)
 
 In fact, the verifier will also show you an instance of a transaction that results in the property failing:
 
-![](../../static/images/sample-transaction-failed-invariant-test.png)
+![](./images/sample-transaction-failed-invariant-test.png)
 
 That means if you were to run `fn(55490)` the property will fail.
 
