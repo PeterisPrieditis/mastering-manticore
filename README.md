@@ -24,3 +24,24 @@ https://github.com/crytic/building-secure-contracts/tree/master/program-analysis
 ### Trail of Bits links
 
 Manticore Tutorial - https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/manticore
+
+### Balancer Labs
+
+https://github.com/balancer-labs/balancer-core/blob/master/Audit.md
+https://github.com/balancer-labs/balancer-core/tree/master/manticore
+
+### Dharma Token (dharma-token)
+
+https://github.com/dharma-eng/dharma-token/blob/master/scripts/mcore-tests/test_fromUnderlying.py
+
+### Dynamic symbol execution detection of smart contract reentry vulnerability
+
+https://github.com/woods1060/M-A-R
+
+### Manticore Ethereum Codelab
+
+https://github.com/wu4f/cs410b-src/tree/master/manticore_labs
+
+### μFragments security tests
+
+https://github.com/ampleforth/uFragments-security-tests/tree/master/manticore
