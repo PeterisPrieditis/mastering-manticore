@@ -6,6 +6,11 @@ Manticore will output the information in a mcore\_\* directory. Among other, you
 - test_XXXXX.summary: coverage, last instruction, account balances per test case
 - test_XXXXX.tx: detailed list of transactions per test case
 
+## resources
+
+- [Manticore: A User-Friendly Symbolic Execution Framework for Binaries and Smart Contracts](https://arxiv.org/pdf/1907.03890.pdf)
+- [POLYSWARM SMART CONTRACT HACKING CHALLENGE WRITEUP](https://raz0r.name/writeups/polyswarm-smart-contract-hacking-challenge-writeup/)
+
 ## introduction folder
 
 Property based symbolic executor: manticore-verifier
