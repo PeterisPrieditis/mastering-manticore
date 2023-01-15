@@ -35,7 +35,8 @@ contract = m.solidity_create_contract(CONTRACT_FILE_NAME, contract_name=CONTRACT
 print(f'[+] Deployed contract. address: {hex(contract.address)}')
 
 print(f'[+] Declaring symbolic variables.')
-amount = m.make_symbolic_value()
+# amount = m.make_symbolic_value()
+amount = 10
 
 print(f'[+] Calling contract functions sequences.')
 
