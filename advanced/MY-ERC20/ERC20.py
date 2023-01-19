@@ -45,7 +45,8 @@ contract.balanceOf(userFrom.address)
 
 # outline the transactions
 m.transaction(caller=userFrom.address, address=contract, value=0, data=m.make_symbolic_buffer(4+32*4))
-contract.transfer(userTo.address, amount, caller=userFrom.address)
+#contract.transfer(userTo.address, amount, caller=userFrom.address)
+contract.transfer(userFrom.address, amount, caller=userFrom.address)
 
 # get state after transaction
 contract.balanceOf(userFrom.address)
@@ -57,7 +58,11 @@ for st in m.ready_states:
     balanceFromBefore = ABI.deserialize("uint", st.platform.transactions[0].return_data)
     balanceFromAfter = ABI.deserialize("uint", st.platform.transactions[-1].return_data)
     # withdrawing more than deposited
-    condition = balanceFromAfter > balanceFromBefore
+    # condition = balanceFromAfter > balanceFromBefore
+    # condition = balanceFromAfter < balanceFromBefore
+    # condition = Operators.UGT(balanceFromAfter, balanceFromBefore)
+    # condition = Operators.UGT(balanceFromBefore, balanceFromAfter)
+    condition = balanceFromBefore == 0
     if m.generate_testcase(st, name="BugFound", only_if=condition):
         print(f'Bug found, results are in {m.workspace}')
         no_bug_found = False

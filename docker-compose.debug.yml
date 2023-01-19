@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  masteringmanticore:
+    image: masteringmanticore
+    build:
+      context: .
+      dockerfile: ./Dockerfile
