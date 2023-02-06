@@ -8,7 +8,7 @@ Manticore will output the information in a mcore\_\* directory. Among other, you
 
 ## Docs
 
-- [Manticore’s documentation] https://manticore.readthedocs.io/en/latest/
+- [Manticore’s documentation](https://manticore.readthedocs.io/en/latest/)
 - [Manticore: A User-Friendly Symbolic Execution Framework for Binaries and Smart Contracts](https://arxiv.org/pdf/1907.03890.pdf)
 - [POLYSWARM SMART CONTRACT HACKING CHALLENGE WRITEUP](https://raz0r.name/writeups/polyswarm-smart-contract-hacking-challenge-writeup/)
 
