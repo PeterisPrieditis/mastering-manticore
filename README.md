@@ -1,5 +1,18 @@
 # A collection of resources to master manticore
 
+This is my first try to use Mantocore for symbolic execution. A lot of people have issues with set-up and symbolic execution requires beefy hardware so probably the best way to use Manticore is via a Docker. I'm using a custom [Docker image](https://github.com/PeterisPrieditis/mastering-manticore/blob/main/Dockerfile) that I made from Trail Of Bits Docker files. 
+
+Docker run with a simple exercise:
+```
+// -it interactive mode, --rm delete container, -v add volume.
+// PWD is an environment variable that your shell will expand to your current working directory.
+docker run -it --rm -v "$PWD":/mastering-manticore pprieditis/mastering-manticore 
+// go to folder and switch compiler. 
+cd /mastering-manticore/intro/Exercise0-Overflow && solc-select use 0.5.11  
+python3 my_token.py  
+exit  
+```
+
 Manticore will output the information in a mcore\_\* directory. Among other, you will find in this directory:
 
 - global.summary: coverage and compiler warnings
