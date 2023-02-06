@@ -1,6 +1,6 @@
 # A collection of resources to master Manticore
 
-This is my first repo to try to use Mantocore for symbolic execution. A lot of people have issues with Manticore set-up and symbolic execution requires beefy hardware so probably the best way to use Manticore is via a Docker. I'm using a custom [Docker image](https://github.com/PeterisPrieditis/mastering-manticore/blob/main/Dockerfile) that I made from Trail Of Bits Docker files. This repo is mainly a just a summary of resources that I found in order to learn Manticore.
+This is my first repo to try to use Mantocore for symbolic execution. A lot of people have issues with Manticore set-up and symbolic execution requires beefy hardware so probably the best way to use Manticore is via a Docker. I'm using a custom [Docker image](https://github.com/PeterisPrieditis/mastering-manticore/blob/main/Dockerfile) that I made from Trail Of Bits Docker files. This repo is just a summary of resources that I found in order to learn Manticore.
 
 Docker run with a simple exercise:
 ```
